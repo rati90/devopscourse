@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+#if [[ -s test ]] #checks files or directories size matters
+#if [[ -a test ]] # checks if there is something no size matter
+#if [[ -f test ]] # checks if there is a file
+if [[ -d test ]] #check is there is a directory
+then 
+	echo "That was true"
+else 
+	echo "That was false"
+fi
