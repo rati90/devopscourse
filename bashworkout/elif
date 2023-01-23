@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Are you cool?"
+read cool
+
+
+if [[ $cool =~ Yes|YES|yes ]]
+then
+        echo "You are cool"
+elif [[ $cool == "Y" ]]
+then 
+	echo "Cool people use the whole world"
+else
+        echo "Well, will make cool"
+
+fi

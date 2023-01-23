@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Are you cool"
+read cool
+
+case $cool in
+	YES)
+		echo "Nice, Stop yelling.";;
+	Yes)
+		echo "Nice. Me too";;
+	Y)	
+		echo "Ok I guess";;
+	y)
+		echo "Ok with y too";;
+	*)
+		echo "We wil hangout anyway";;
+
+esac

@@ -3,7 +3,10 @@
 echo "Are you cool?"
 read cool
 
-if [[ $cool == "YES" ]]
+# [[ $cool == "yes" || $cool == "YES" || $cool == "Yes" || $cool == "Y"  ]]
+
+
+if [[ $cool =~ Yes|YES|Y|y|yes ]]
 then 
 	echo "You are cool"
 else
