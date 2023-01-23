@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+if [[ "Thing" == "Thing " ]]
+then
+	echo "That was true"
+else
+	echo "That was false"
+fi
