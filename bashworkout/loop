@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#x=1
+x=10
+
+#while [[ $x -le 10 ]]
+until [[ $x -lt 1 ]]
+do
+ echo $x
+# ((x++))
+ ((x--))
+done 
+
+
+until [[ $name == "Rati" ]]
+do
+ echo "who are you"
+ read name
+done
+echo "Hi $name, I've been waiting for you"
+
+
+
+for y in $(cat ./names.txt)
+# {1..10}
+#1 2 3 4
+do
+ echo $y
+done
+
+for x in {1..20}
+do 
+ if [[ $x == 13 ]]
+ then
+  continue
+ fi
+ echo "elevetor stopping floor $x"
+ sleep 0.25
+done
+
+
+
+while true
+do
+ echo "who are you?"
+ read name
+ if [[ $name == "Rati" ]]
+ then
+  break
+ fi
+ echo "Hi, $name!"
+done
+echo "$name ruins everything.."
+
